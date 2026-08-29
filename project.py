@@ -343,7 +343,7 @@ current_start_dt, current_end_dt, current_target_str = get_selected_week_range(c
 #     current_week_exists = current_target_str in df_master["Archived Week"].values
 
 # if not current_week_exists:
-with st.spinner("Executing background feeds synchronization & Gemini AI semantic cross-matching..."):
+with st.spinner("Processing..."):
     yahoo_headlines = get_yahoo_news(current_start_dt, current_end_dt)
     investing_headlines = get_investing_news(current_start_dt, current_end_dt)
     av_headlines = get_alpha_vantage_news(current_start_dt, current_end_dt, GEMINI_API_KEY) 
