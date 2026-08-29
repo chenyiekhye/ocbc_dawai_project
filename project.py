@@ -253,8 +253,8 @@ def find_common_and_recommend_gemini(yahoo, investing, av):
     {article_list_str}
     
     Tasks:
-    1. Identify articles that are reporting on the similar same news story or market event (Semantic Cross-Referencing).
-    2. Only keep a cluster if it contains unique articles from AT LEAST TWO (2) different sources. Ignore single-source stories.
+    1. Only keep a cluster if it contains unique articles from AT LEAST TWO (2) different sources. Ignore single-source stories. Apply this logic from task 2 to task 9.
+    2. Identify articles that are reporting on the similar same news story or market event (Semantic Cross-Referencing).
     3. Select the best, most descriptive title from the group to serve as the 'primary_headline'.
     4. Provide all unique source names in 'sources_reporting'.
     5. Compile all original string link references into 'all_matched_links' matching this format exactly: "[Source Name] (Published: Timestamp) - URL"
@@ -263,7 +263,7 @@ def find_common_and_recommend_gemini(yahoo, investing, av):
        - "BUY / ACCUMULATE"
        - "SELL / CAUTION"
        - "HOLD / MONITOR"
-    8. Extract the article published dates in 'published_date'.
+    8. Extract the publication dates of the articles in 'published_date'.
     9. Identify articles that are reporting on the similar same news story or market event and summarize the articles in 'justification'.
     """
 
