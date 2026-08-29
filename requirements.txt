@@ -1,0 +1,10 @@
+streamlit #most often required
+pandas #if dealing with data
+feedparser
+requests
+newspaper3k
+scikit-learn
+lxml_html_clean
+openpyxl
+google
+google-genai
