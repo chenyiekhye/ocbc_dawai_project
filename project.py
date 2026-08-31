@@ -253,7 +253,7 @@ def find_common_and_recommend_gemini(yahoo, investing, av):
     {article_list_str}
     
     Tasks:
-    1. Prevent Duplication and identify articles that are reporting on the similar same news story or market event (Semantic Cross-Referencing).
+    1. Prevent duplication, ignore single-source article and identify articles that are reporting on the similar same news story or market event (Semantic Cross-Referencing).
     2. Select the best, most descriptive title from the group to serve as the 'primary_headline'.
     3. Provide all unique source names in 'sources_reporting'.
     4. Compile all original string link references into 'all_matched_links' matching this format exactly: "[Source Name] (Published: Timestamp) - URL"
