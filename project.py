@@ -253,18 +253,17 @@ def find_common_and_recommend_gemini(yahoo, investing, av):
     {article_list_str}
     
     Tasks:
-    1. Prevent Duplication. Only keep a cluster if it contains unique articles from AT LEAST TWO (2) different sources. Ignore single-source stories. Apply this logic from task 2 to task 9.
-    2. Identify articles that are reporting on the similar same news story or market event (Semantic Cross-Referencing).
-    3. Select the best, most descriptive title from the group to serve as the 'primary_headline'.
-    4. Provide all unique source names in 'sources_reporting'.
-    5. Compile all original string link references into 'all_matched_links' matching this format exactly: "[Source Name] (Published: Timestamp) - URL"
-    6. Extract one single valid HTTP URL from the cluster to save as 'representative_url' so we can parse it for full context later.
-    7. Determine the 'recommendation_action' for the headline. It must strictly be one of these three values:
+    1. Prevent Duplication and identify articles that are reporting on the similar same news story or market event (Semantic Cross-Referencing).
+    2. Select the best, most descriptive title from the group to serve as the 'primary_headline'.
+    3. Provide all unique source names in 'sources_reporting'.
+    4. Compile all original string link references into 'all_matched_links' matching this format exactly: "[Source Name] (Published: Timestamp) - URL"
+    5. Extract one single valid HTTP URL from the cluster to save as 'representative_url' so we can parse it for full context later.
+    6. Determine the 'recommendation_action' for the headline. It must strictly be one of these three values:
        - "BUY / ACCUMULATE"
        - "SELL / CAUTION"
        - "HOLD / MONITOR"
-    8. Extract the publication dates of the articles in 'published_date'.
-    9. Identify articles that are reporting on the similar same news story or market event and summarize the articles and recommend the actions in 'justification'.
+    7. Extract the publication dates of the articles in 'published_date'.
+    8. Identify articles that are reporting on the similar same news story or market event and summarize the articles and recommend the actions in 'justification'.
     """
 
     try:
