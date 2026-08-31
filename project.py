@@ -264,7 +264,7 @@ def find_common_and_recommend_gemini(yahoo, investing, av):
        - "SELL / CAUTION"
        - "HOLD / MONITOR"
     8. Extract the publication dates of the articles in 'published_date'.
-    9. Identify articles that are reporting on the similar same news story or market event and summarize the articles in 'justification'.
+    9. Identify articles that are reporting on the similar same news story or market event and summarize the articles and recommend the actions in 'justification'.
     """
 
     try:
