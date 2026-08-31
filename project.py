@@ -253,7 +253,7 @@ def find_common_and_recommend_gemini(yahoo, investing, av):
     {article_list_str}
     
     Tasks:
-    1. Only keep a cluster if it contains unique articles from AT LEAST TWO (2) different sources. Ignore single-source stories. Apply this logic from task 2 to task 9.
+    1. Prevent Duplication. Only keep a cluster if it contains unique articles from AT LEAST TWO (2) different sources. Ignore single-source stories. Apply this logic from task 2 to task 9.
     2. Identify articles that are reporting on the similar same news story or market event (Semantic Cross-Referencing).
     3. Select the best, most descriptive title from the group to serve as the 'primary_headline'.
     4. Provide all unique source names in 'sources_reporting'.
